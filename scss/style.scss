@@ -1,0 +1,212 @@
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+
+    &__info {
+        font-family: "TTNorms", sans-serif;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 12px 0 11px 0;
+        background-color: #a0c5db;
+    }
+    span {
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+    }
+
+    &__inner {
+        height: 25px;
+        display: flex;
+        padding: 15px 0;
+    }
+
+    &__logo {
+        height: 25px;
+        cursor: pointer;
+    }
+    &__menu {
+        font-family: "TTNorms", sans-serif;
+        font-size: 14px;
+        display: flex;
+        list-style: none;
+        margin-left: 345px;
+        align-items: center;
+
+        &-item {
+            margin-right: 35px;
+        }
+    }
+    &__button {
+        width: 25px;
+        cursor: pointer;
+    }
+}
+.tabes{
+    display: flex;
+    background-color: #DCDCDC;
+    margin-top: 61px;
+
+    &__head{
+        width: 600px;
+        height: 86px;
+        margin: 0 231px 9px;
+        font-family: 'TTNorms', sans-serif;
+        
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 1.18;
+        text-align: center;
+        color: #363636;
+    }
+    &__text1{
+        width: 623px;
+        height: 53px;
+        margin: 9px 219px 59px 220px;
+        font-family: 'TTNorms', sans-serif;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        color: #383838;
+    }
+}
+.list{
+    display: flex;
+    margin-top: 61px;
+
+    &__main {
+        text-align: center;
+        margin: 0 72px;
+        font-family: "TTNorms", sans-serif;
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 1.18;
+        color: #363636;
+    }
+    &__text {
+        width: 590px;
+        margin: 10px 166px 46px 167px;
+        font-family: "TTNorms", sans-serif;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        color: #383838;
+    }
+
+    &__tabs {
+        position: relative;
+        padding: 0px;
+        margin: 0 auto;
+        font-family: "TTNorms", sans-serif;
+
+        &-icon{
+            position: absolute;
+            box-shadow:( 0 0 10px gray);
+            width: 345px;
+            margin-left: 19%;
+            margin-top: -25%;
+        }
+    }
+
+    &__tabs > section {
+        display: none;
+        padding: 15px;
+        background: #fff;
+    }
+    &__tabs > section > p {
+        line-height: 1.5;
+        color: #383838;
+        width: 330px;
+
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    &__tabs > input {
+        display: none;
+        position: absolute;
+    }
+
+    &__tabs > label {
+        font-weight: bold;
+        display: inline-block;
+        margin: 0 0 -1px;
+        padding: 15px 0;
+        text-align: center;
+        color: #aaa;
+        
+    }
+    
+
+    &__tabs > label:hover {
+        color: #888;
+        cursor: pointer;
+    }
+    &__tabs > input:checked + label {
+        color: #555;
+        border-bottom: 1px solid #d7d7d7;
+        background: #fff;
+    }
+    #tab1:checked ~ #content-tab1,
+    #tab2:checked ~ #content-tab2,
+    #tab3:checked ~ #content-tab3 {
+        display: block;
+    }
+}
+     /* @media screen and (max-width: 680px) {
+        &__tabs > label {
+            font-size: 0;
+        }
+        &__tabs > label:before {
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        &__tabs > label {
+            padding: 15px;
+        }
+    }
+} 
+@media (max-width: 320px) {
+    
+    .header__logo{
+        display: flex;
+        cursor: pointer;
+        height: 20px;
+        align-items: center;
+        overflow: hidden;
+    }
+    .header__menu,
+    .header__info,
+    .header__button{
+        display: none;
+    }
+
+}  */

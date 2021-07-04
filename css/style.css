@@ -1,0 +1,234 @@
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__info {
+  font-family: "TTNorms", sans-serif;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 12px 0 11px 0;
+  background-color: #a0c5db;
+}
+
+.header span {
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.header__inner {
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+
+.header__logo {
+  height: 25px;
+  cursor: pointer;
+}
+
+.header__menu {
+  font-family: "TTNorms", sans-serif;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: 345px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu-item {
+  margin-right: 35px;
+}
+
+.header__button {
+  width: 25px;
+  cursor: pointer;
+}
+
+.tabes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #DCDCDC;
+  margin-top: 61px;
+}
+
+.tabes__head {
+  width: 600px;
+  height: 86px;
+  margin: 0 231px 9px;
+  font-family: 'TTNorms', sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.18;
+  text-align: center;
+  color: #363636;
+}
+
+.tabes__text1 {
+  width: 623px;
+  height: 53px;
+  margin: 9px 219px 59px 220px;
+  font-family: 'TTNorms', sans-serif;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: #383838;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 61px;
+}
+
+.list__main {
+  text-align: center;
+  margin: 0 72px;
+  font-family: "TTNorms", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.18;
+  color: #363636;
+}
+
+.list__text {
+  width: 590px;
+  margin: 10px 166px 46px 167px;
+  font-family: "TTNorms", sans-serif;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  color: #383838;
+}
+
+.list__tabs {
+  position: relative;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: "TTNorms", sans-serif;
+}
+
+.list__tabs-icon {
+  position: absolute;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  width: 345px;
+  margin-left: 19%;
+  margin-top: -25%;
+}
+
+.list__tabs > section {
+  display: none;
+  padding: 15px;
+  background: #fff;
+}
+
+.list__tabs > section > p {
+  line-height: 1.5;
+  color: #383838;
+  width: 330px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.list__tabs > input {
+  display: none;
+  position: absolute;
+}
+
+.list__tabs > label {
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 0;
+  text-align: center;
+  color: #aaa;
+}
+
+.list__tabs > label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.list__tabs > input:checked + label {
+  color: #555;
+  border-bottom: 1px solid #d7d7d7;
+  background: #fff;
+}
+
+.list #tab1:checked ~ #content-tab1,
+.list #tab2:checked ~ #content-tab2,
+.list #tab3:checked ~ #content-tab3 {
+  display: block;
+}
+
+/* @media screen and (max-width: 680px) {
+        &__tabs > label {
+            font-size: 0;
+        }
+        &__tabs > label:before {
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        &__tabs > label {
+            padding: 15px;
+        }
+    }
+} 
+@media (max-width: 320px) {
+    
+    .header__logo{
+        display: flex;
+        cursor: pointer;
+        height: 20px;
+        align-items: center;
+        overflow: hidden;
+    }
+    .header__menu,
+    .header__info,
+    .header__button{
+        display: none;
+    }
+
+}  */
+/*# sourceMappingURL=style.css.map */
